@@ -214,65 +214,6 @@ class Sql {
 
 		}
 
-
-/*
-		public static function Select(){
-
-			$conn = new mysqli("localhost", "root", "josiane29","umabola");
-			if ($conn->connect_errno) {
-		    printf("Connect failed: %s\n", $conn->connect_error);
-		    exit();
-			}
-
-			$sql = "SELECT *FROM teste ";
-			 $result = $conn->query($sql);
-			 $row = $result->fetch_assoc();
-			 return $row;
-		
-	}	  
-
-	function SelectSchemas($banco){
-
-			$conn = new mysqli("localhost", "root", "josiane29", $banco);
-			if ($conn->connect_errno) {
-		    printf("Connect failed: %s\n", $conn->connect_error);
-		    exit();
-			}
-
-			$sql = "SHOW SCHEMAS";
-			$result = $conn->query($sql);
-
-
-
-
-			if ($result->num_rows > 0) {
-			    // output data of each row
-			    
-			        
-
-				$tabela = '<table border="1">';//abre table
-			    $tabela .='<thead>';//abre cabeçalho
-			    $tabela .= '<tr>';//abre uma linha
-			    $tabela .= '<th>NOME DO BANCO</th>'; 
-			    $tabela .= '</tr>';//fecha linha
-			    $tabela .='</thead>'; //fecha cabeçalho
-			    $tabela .='<tbody>';//abre corpo da tabela
-			    while($row = $result->fetch_assoc()) {
-
-			    $tabela .= '<tr>'; // abre uma linha
-			    $tabela .= '<td>'.$row['Database'].'</td>'; //coluna numero
-				$tabela .= '</tr>'; // fecha linha
-			    /*loop deve terminar aqui
-				}
-			    $tabela .='</tbody>'; //fecha corpo
-			    $tabela .= '</table>';//fecha tabela
-
-   				 echo $tabela;
-			 
-
-		}
-	}
-*/
 	   
 	
 }
